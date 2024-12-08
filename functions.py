@@ -95,7 +95,7 @@ def plot_category(data,figsize=(10,8),n_row=None,n_col=None):
 
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
-def OneShotEncoding(DF_data):
+def OneShotEncoding(DF_data,drop =True):
     """ 
     `OneShotEncoding(DF_data)` -> DataFrame
     This an update version of the One-Hot Encoder from
@@ -110,12 +110,17 @@ def OneShotEncoding(DF_data):
     df_dummy_list = []
     # list_data = []
     for col in categorical_data:
-        Enc_ohe, Enc_label = OneHotEncoder(drop='first'), LabelEncoder() # Create an instance of the class OneHot encoding
+        if drop:
+            Enc_ohe, Enc_label = OneHotEncoder(drop='first'), LabelEncoder() # Create an instance of the class OneHot encoding
+        else:
+            Enc_ohe, Enc_label = OneHotEncoder(), LabelEncoder()
         Enc_label.fit_transform(DF_data[col])
         DF_dummies2 = pd.DataFrame(Enc_ohe.fit_transform(DF_data[[col]]).todense(), columns = Enc_label.classes_[1:])
         df_dummy_list.append(DF_dummies2)
     df_dummy_list.append(DF_data)
     result =pd.concat(df_dummy_list, axis=1)
+
+    return(result)
 
     return(result)
 
