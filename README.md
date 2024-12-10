@@ -89,6 +89,33 @@ The data did not contain duplicates but it had missing values the majority of wh
 
 ![water_quality](https://github.com/user-attachments/assets/d269141c-32ab-4010-a909-fc3a55d5fd89)
 
+3. Visualizing the key stakeholders who funded the establishment of the water pump
+
+![image](https://github.com/user-attachments/assets/164460ef-18f7-4229-add8-79e0773ab3ad)
+
+The bar chart displays the functionality status of waterpoints across different funders. Among the funders, the **Government of Tanzania** is the largest contributor, supporting over 8,000 waterpoints, with more than half (4,663) being non-functional. **Danida** and **Hesawa** follow as significant contributors, with Danida showing a higher proportion of non-functional water points (1,242 functional vs. 1,713 non-functional). **World Vision** and **World Bank** have a relatively balanced split between functional and non-functional waterpoints, while smaller contributors like **Private Individuals** and **Unicef** demonstrate a higher number of functional waterpoints compared to non-functional ones. This suggests that while the Government of Tanzania contributes heavily to waterpoints, the functionality rate under its funding is relatively lower compared to other funders.
+
+To further determine what association exists between the funders and the functionality of a water pump a chi-square test was performed to test the whether the association exists.
+```
+# chi-square test
+from scipy import stats
+
+crosstab= pd.crosstab(plot_data['funder'],plot_data['status_group'])
+print(stats.chi2_contingency(crosstab))
+```
+
+The very high Chi-square statistic (902.8940071619397) and extremely small p-value(1.472005828590181e-188) and a degree of freedom of 9 suggest a strong association between the two categorical variables funder and status group.
+
+The largest contributors to the Chi-square statistic are likely Government of Tanzania, DANIDA, and Private Individual, given their high absolute counts and discrepancies between functional and non-functional water points.
+
+Insights:
+
+Funders like Government of Tanzania and HESAWA may require further analysis to understand why their non-functional water points are so high despite large investments.
+Private Individuals might benefit from technical or financial support to improve their success rate in maintaining functional water points.
+Focus on funders with a higher proportion of functional water points (e.g., DANIDA ) could offer insights into best practices.
+
+
+
 
 
 
