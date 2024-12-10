@@ -134,6 +134,7 @@ This approach balances simplicity, interpretability, and advanced techniques, pr
 
 ## **Model Comparison**
 Since our response variable contains imbalanced classes
+
 ![image](https://github.com/user-attachments/assets/f0267309-2711-4cc4-9958-532616d8f96d)
 
 Balancing the classes was tackled by using *SMOTE-NC (Nominal Continuous)* which takes into account when most of the variables in the data are categorical variables.
