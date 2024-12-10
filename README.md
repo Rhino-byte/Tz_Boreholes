@@ -1,10 +1,10 @@
 # A Data-Driven Approach to Waterpoint Functionality and Accessibility
 
 ##  Table of Contents
-1. [Business Overview](##Business-understanding)
-2. [Business Understanding](#Objectives)
+1. [Business Overview](#Business-understanding)
+2. [Business Understanding](#Why-It-Matters)
 3. [Stakeholders](#Key-Stakeholder)
-4. [Success criteria](#Success-criteria)
+4. [Success criteria](#Expected-Outcome)
 5. [Data Understanding](#Data-Understanding)
 6. [Constraints](#Constraints)
 7. [Data Visualisations](#Data-Visualisations)
@@ -22,7 +22,7 @@ The primary business goal is to predict the operational status of waterpoints in
 1. Functional - Fully operational and providing water as intended.
 2. Non-functional - Not operational and failing to provide water.
 
-*Why It Matters:*
+## *Why It Matters:*
 1. *Efficient Resource Allocation:*
 Predicting waterpoint conditions allows stakeholders (The Tanzanian Ministry of Water, NGOs) to allocate resources efficiently by prioritizing repairs and maintenance.
 2. *Improved Accessibility to Water:*
@@ -34,7 +34,7 @@ Understanding patterns in failures helps in better planning for future installat
 
 ---
 
-##*Key Stakeholders:*
+## *Key Stakeholders:*
 - Government Agencies (Tanzanian Ministry of Water): Responsible for policy-making and infrastructure maintenance.
 -NGOs and Charities: Focused on improving access to clean water.
 -Local Communities: Beneficiaries of operational waterpoints.
@@ -50,7 +50,7 @@ The dataset provides various features that capture the physical attributes, inst
 3. How do management and funding affect waterpoint longevity?
 4. Can the age of a waterpoint (construction year) predict its condition?
 
-**Expected Outcome:**
+## **Expected Outcome:**
 A machine learning model that:
 - Accurately predicts the operational status of a waterpoint.
 - Key factors affecting functionality.
