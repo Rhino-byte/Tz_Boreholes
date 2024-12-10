@@ -1,5 +1,18 @@
 # A Data-Driven Approach to Waterpoint Functionality and Accessibility
 
+##  Table of Contents
+1. [Business Overview](##Business-understanding)
+2. [Business Understanding](#Objectives)
+3. [Stakeholders](#Key-Stakeholder)
+4. [Success criteria](#Success-criteria)
+5. [Data Understanding](#Data-Understanding)
+6. [Constraints](#Constraints)
+7. [Data Visualisations](#Data-Visualisations)
+8. [Model Performance](#Model-Performance)
+9. [model choice](#model-choice)
+10. [Recommendations](#Recommendations)
+11. [Thank You](#THANK-YOU)
+
 ![image](https://github.com/user-attachments/assets/a68f7cf9-2cdc-45ed-86e5-b109ef0e7302)
 
 ## Business understanding
@@ -21,7 +34,7 @@ Understanding patterns in failures helps in better planning for future installat
 
 ---
 
-*Key Stakeholders:*
+##*Key Stakeholders:*
 - Government Agencies (Tanzanian Ministry of Water): Responsible for policy-making and infrastructure maintenance.
 -NGOs and Charities: Focused on improving access to clean water.
 -Local Communities: Beneficiaries of operational waterpoints.
@@ -45,8 +58,11 @@ A machine learning model that:
 
 *Potential Challenges:*
 a) Data Quality: Missing or inconsistent entries in key variables (e.g., funder, construction year).
+
 b) Class Imbalance: If most water points are functional, predicting minority classes (e.g., non-functional) can be challenging.
+
 c) Geographic and Temporal Variability: Different regions may have unique issues (e.g., drought, poor maintenance) that complicate predictions.
+
 d) Interpretability: Translating complex model outputs into actionable insights for stakeholders.
 
 *Key Deliverables:*
@@ -55,6 +71,6 @@ d) Interpretability: Translating complex model outputs into actionable insights 
 3. **Dashboard or Visualization Tools:** To enable stakeholders to view and act on predictions and insights.
 
 
-
+## Data Understanding
 
 [Tableu Visualization](https://public.tableau.com/views/Waterboreholes_Tz/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
