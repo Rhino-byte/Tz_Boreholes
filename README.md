@@ -165,8 +165,9 @@ To evaluate how the best model performed we will use a confusion matrix
 ![image](https://github.com/user-attachments/assets/caf4392b-6913-4f5b-9786-356a6b044a35)
 
 **Interpretation:**
-Strengths: The model performs well in predicting functional items (high true negative rate, 86.6%).
-Weaknesses: It struggles more with predicting non-functional items, as indicated by a lower recall (69.7%) and a significant false negative count (30.3%).
+
+**Strengths:** The model performs well in predicting functional items (high true negative rate, 86.6%).
+**Weaknesses:** It struggles more with predicting non-functional items, as indicated by a lower recall (69.7%) and a significant false negative count (30.3%).
 
 
 We can also investigate the top ten performing features in our model. To help our stakeholders capitalize on them to improve pump functionality
@@ -193,6 +194,8 @@ We can also investigate the top ten performing features in our model. To help ou
 ## Links
 
 [Tableu Visualization](https://public.tableau.com/views/Waterboreholes_Tz/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+[Slides Presentation](https://docs.google.com/presentation/d/1K9nwBTftBDnsCaEZc9Y6jvbgYhUNl60bXdDqdYcrc94/edit?usp=sharing)
 
 For queries or support, reach out via :
 
