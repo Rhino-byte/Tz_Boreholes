@@ -22,36 +22,37 @@ Understanding patterns in failures helps in better planning for future installat
 ---
 
 *Key Stakeholders:*
-Government Agencies (Tanzanian Ministry of Water):
-Responsible for policy-making and infrastructure maintenance.
-NGOs and Charities:
-Focused on improving access to clean water.
-Local Communities:
-Beneficiaries of operational waterpoints.
-Donors and Funders:
-Interested in the impact of their investments in water infrastructure.
-Problem description:
-The dataset provides a variety of features that capture the physical attributes, installation details, geographic location, and usage patterns of the waterpoints. These variables can help answer questions such as:
+- Government Agencies (Tanzanian Ministry of Water): Responsible for policy-making and infrastructure maintenance.
+-NGOs and Charities: Focused on improving access to clean water.
+-Local Communities: Beneficiaries of operational waterpoints.
+-Donors and Funders: Interested in the impact of their investments in water infrastructure.
 
-What factors contribute most to waterpoint failures?
-Are certain geographic areas more prone to non-functional waterpoints?
-How do management and funding affect waterpoint longevity?
-Can the age of a waterpoint (construction year) predict its condition?
-Expected Outcome:
+---
+
+**Problem Description:**
+The dataset provides various features that capture the physical attributes, installation details, geographic location, and usage patterns of the water points. These variables can help answer questions such as:
+
+1. What factors contribute most to waterpoint failures?
+2. Are certain geographic areas more prone to non-functional water points?
+3. How do management and funding affect waterpoint longevity?
+4. Can the age of a waterpoint (construction year) predict its condition?
+
+**Expected Outcome:**
 A machine learning model that:
+- Accurately predicts the operational status of a waterpoint.
+- Key factors affecting functionality.
+- Provides actionable insights for maintaining and repairing water points.
 
-Accurately predicts the operational status of a waterpoint.
-Identifies key factors affecting functionality.
-Provides actionable insights for maintaining and repairing waterpoints.
-Potential Challenges:
-Data Quality: Missing or inconsistent entries in key variables (e.g., funder, construction year).
-Class Imbalance: If most waterpoints are functional, predicting minority classes (e.g., non-functional) can be challenging.
-Geographic and Temporal Variability: Different regions may have unique issues (e.g., drought, poor maintenance) that complicate predictions.
-Interpretability: Translating complex model outputs into actionable insights for stakeholders.
-Key Deliverables:
-Classification Model: A robust algorithm to predict waterpoint status.
-Feature Analysis Report: Insights into which factors most influence waterpoint conditions.
-Dashboard or Visualization Tools: To enable stakeholders to view and act on predictions and insights.
+*Potential Challenges:*
+a) Data Quality: Missing or inconsistent entries in key variables (e.g., funder, construction year).
+b) Class Imbalance: If most water points are functional, predicting minority classes (e.g., non-functional) can be challenging.
+c) Geographic and Temporal Variability: Different regions may have unique issues (e.g., drought, poor maintenance) that complicate predictions.
+d) Interpretability: Translating complex model outputs into actionable insights for stakeholders.
+
+*Key Deliverables:*
+1. **Classification Model:** A robust algorithm to predict waterpoint status.
+2. **Feature Analysis Report:** Insights into which factors most influence waterpoint conditions.
+3. **Dashboard or Visualization Tools:** To enable stakeholders to view and act on predictions and insights.
 
 
 
