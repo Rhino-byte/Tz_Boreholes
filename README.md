@@ -96,7 +96,7 @@ The data did not contain duplicates but it had missing values the majority of wh
 The bar chart displays the functionality status of waterpoints across different funders. Among the funders, the **Government of Tanzania** is the largest contributor, supporting over 8,000 waterpoints, with more than half (4,663) being non-functional. **Danida** and **Hesawa** follow as significant contributors, with Danida showing a higher proportion of non-functional water points (1,242 functional vs. 1,713 non-functional). **World Vision** and **World Bank** have a relatively balanced split between functional and non-functional waterpoints, while smaller contributors like **Private Individuals** and **Unicef** demonstrate a higher number of functional waterpoints compared to non-functional ones. This suggests that while the Government of Tanzania contributes heavily to waterpoints, the functionality rate under its funding is relatively lower compared to other funders.
 
 To further determine what association exists between the funders and the functionality of a water pump a chi-square test was performed to test the whether the association exists.
-```
+```{python}
 # chi-square test
 from scipy import stats
 
