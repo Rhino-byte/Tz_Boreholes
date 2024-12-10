@@ -184,7 +184,7 @@ We can also investigate the top ten performing features in our model. To help ou
 1. **` Water Management`:** Prioritize consistent water availability, as the most critical features relate to quantity and seasonality.
 2. **`Maintenance Plans`:** Develop targeted maintenance programs for older wells to improve their functionality.
 3. **`Regional Focus`:** Investigate wells in the Lake Victoria basin or at extreme elevations to address location-specific challenges.
-4. ** `Design Optimization`:** Evaluate the least functional water point types under "other" and address design or maintenance shortcomings.
+4. **`Design Optimization`:** Evaluate the least functional water point types under "other" and address design or maintenance shortcomings.
 5. **` Population Alignment`:** Ensure wells are appropriately scaled for the population they serve.
 
 
