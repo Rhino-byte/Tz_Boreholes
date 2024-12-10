@@ -11,7 +11,7 @@
 8. [Model Performance](#Model-Performance)
 9. [model choice](#Model-Comparison)
 10. [Recommendations](#Recommendations)
-11. [Thank You](#THANK-YOU)
+11. [Personal Info](#Links)
 
 ![image](https://github.com/user-attachments/assets/a68f7cf9-2cdc-45ed-86e5-b109ef0e7302)
 
@@ -118,9 +118,9 @@ Focus on funders with a higher proportion of functional water points (e.g., DANI
 ## Modeling
 
 For this section, since we were working with a classification problem the following models were used:
-1. *`Logistic models`*
+1. *` Logistic models`*
 2. *`Decision Trees`*
-3. *`Convolution Neural Network`*
+3. *` Convolution Neural Network`*
 
 **Why This Combination of Models?**
 Using a combination of these models ensures a robust analysis:
@@ -135,6 +135,7 @@ This approach balances simplicity, interpretability, and advanced techniques, pr
 ## **Model Comparison**
 Since our response variable contains imbalanced classes
 ![image](https://github.com/user-attachments/assets/f0267309-2711-4cc4-9958-532616d8f96d)
+
 Balancing the classes was tackled by using *SMOTE-NC (Nominal Continuous)* which takes into account when most of the variables in the data are categorical variables.
 Also, we will use the F1_score as the metric to measure our model's performance on predicting the classes and other evaluation techniques.
 Fine-tuning was necessary to ensure the models were optimized to their best performance while addressing issues like overfitting in the model.
@@ -167,14 +168,35 @@ Strengths: The model performs well in predicting functional items (high true neg
 Weaknesses: It struggles more with predicting non-functional items, as indicated by a lower recall (69.7%) and a significant false negative count (30.3%).
 
 
+We can also investigate the top ten performing features in our model. To help our stakeholders capitalize on them to improve pump functionality
+
+![image](https://github.com/user-attachments/assets/b4650e62-c221-4965-a6fb-e6765eeb7061)
+
+**Summary of Insights**
+
+1. Water-related metrics (`quantity_enough`, `quantity_insufficient`, `quantity_seasonal`, and `amount_tsh`) dominate as predictors, highlighting the importance of consistent water supply and flow.
+2. Geographic and demographic factors (`gps_height`, `population`, `basin_Lake Victoria`) suggest that environmental and community characteristics play a secondary role.
+3. The age of the infrastructure (`decades`) reflects the need for maintenance and modernization.
+
+## Recommendations
+
+1. **` Water Management`:** Prioritize consistent water availability, as the most critical features relate to quantity and seasonality.
+2. **`Maintenance Plans`:** Develop targeted maintenance programs for older wells to improve their functionality.
+3. **`Regional Focus`:** Investigate wells in the Lake Victoria basin or at extreme elevations to address location-specific challenges.
+4. ** `Design Optimization`:** Evaluate the least functional water point types under "other" and address design or maintenance shortcomings.
+5. **` Population Alignment`:** Ensure wells are appropriately scaled for the population they serve.
 
 
 
 
-
-
-
-
-
+## Links
 
 [Tableu Visualization](https://public.tableau.com/views/Waterboreholes_Tz/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+For queries or support, reach out via :
+
+Email📩: savinskamau01@gmail.com
+
+LinkedIn: [Savins Nanyaemuny](https://www.linkedin.com/in/nsavins/)
+
+Thanks for your time🙂‍↕️
