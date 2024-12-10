@@ -3,10 +3,10 @@
 ##  Table of Contents
 1. [Business Overview](#Business-understanding)
 2. [Business Understanding](#Why-It-Matters)
-3. [Stakeholders](#Key-Stakeholder)
+3. [Stakeholders](#Key-Stakeholders)
 4. [Success criteria](#Expected-Outcome)
 5. [Data Understanding](#Data-Understanding)
-6. [Constraints](#Constraints)
+6. [EDA](#Exploratory-Data-Analysis)
 7. [Data Visualisations](#Data-Visualisations)
 8. [Model Performance](#Model-Performance)
 9. [model choice](#model-choice)
@@ -72,5 +72,24 @@ d) Interpretability: Translating complex model outputs into actionable insights 
 
 
 ## Data Understanding
+The data used in this project is from the [Taarifa Competition](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/data/)
+
+Data Understanding The comes from Driven Data - Tanzanian Water Wells
+
+The data did not contain duplicates but it had missing values the majority of which were categorical columns measures taken were to impute the missing values to retain other rows containing information that was useful in the exploratory data analysis and modeling section.
+
+
+## Exploratory Data Analysis
+
+1. visualized the distribution of water wells and their status
+
+![image](https://github.com/user-attachments/assets/64a98ef6-d993-41fc-9224-23a0732e5115)
+
+2. Visualized water quality from the different water wells
+
+![water_quality](https://github.com/user-attachments/assets/d269141c-32ab-4010-a909-fc3a55d5fd89)
+
+
+
 
 [Tableu Visualization](https://public.tableau.com/views/Waterboreholes_Tz/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
