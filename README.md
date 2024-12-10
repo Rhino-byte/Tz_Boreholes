@@ -85,7 +85,7 @@ The data did not contain duplicates but it had missing values the majority of wh
 
 ![image](https://github.com/user-attachments/assets/64a98ef6-d993-41fc-9224-23a0732e5115)
 
-2. Visualized water quality from the different water wells  [Tableu_Viz]()
+2. Visualized water quality from the different water wells  [Tableu_Viz](https://public.tableau.com/app/profile/savins.nanyaemuny/viz/Waterboreholes_Tz/Sheet2)
 
 ![water_quality](https://github.com/user-attachments/assets/d269141c-32ab-4010-a909-fc3a55d5fd89)
 
@@ -192,8 +192,6 @@ We can also investigate the top ten performing features in our model. To help ou
 
 
 ## Links
-
-[Tableu Visualization]()
 
 [Slides Presentation](https://docs.google.com/presentation/d/1K9nwBTftBDnsCaEZc9Y6jvbgYhUNl60bXdDqdYcrc94/edit?usp=sharing)
 
