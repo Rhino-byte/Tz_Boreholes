@@ -13,6 +13,8 @@
 10. [Recommendations](#Recommendations)
 11. [Personal Info](#Links)
 
+Dive into the [notebook](https://github.com/Rhino-byte/Tz_Boreholes/blob/main/student.ipynb)
+
 ![image](https://github.com/user-attachments/assets/a68f7cf9-2cdc-45ed-86e5-b109ef0e7302)
 
 ## Business understanding
