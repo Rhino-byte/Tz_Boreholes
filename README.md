@@ -81,11 +81,11 @@ The data did not contain duplicates but it had missing values the majority of wh
 
 ## Exploratory Data Analysis🔍🧐
 
-1. visualized the distribution of water wells and their status
+1. visualized the distribution of water wells and their status [Tableu_Viz](https://public.tableau.com/views/Waterboreholes_Tz/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ![image](https://github.com/user-attachments/assets/64a98ef6-d993-41fc-9224-23a0732e5115)
 
-2. Visualized water quality from the different water wells
+2. Visualized water quality from the different water wells  [Tableu_Viz]()
 
 ![water_quality](https://github.com/user-attachments/assets/d269141c-32ab-4010-a909-fc3a55d5fd89)
 
@@ -193,7 +193,7 @@ We can also investigate the top ten performing features in our model. To help ou
 
 ## Links
 
-[Tableu Visualization](https://public.tableau.com/views/Waterboreholes_Tz/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Tableu Visualization]()
 
 [Slides Presentation](https://docs.google.com/presentation/d/1K9nwBTftBDnsCaEZc9Y6jvbgYhUNl60bXdDqdYcrc94/edit?usp=sharing)
 
