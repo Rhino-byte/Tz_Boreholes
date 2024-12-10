@@ -6,10 +6,10 @@
 3. [Stakeholders](#Key-Stakeholders)
 4. [Success criteria](#Expected-Outcome)
 5. [Data Understanding](#Data-Understanding)
-6. [EDA](#Exploratory-Data-Analysis)
+6. [EDA](#Exploratory-Data-Analysis🔍🧐)
 7. [Modeling 🤖🚀](#Modeling)
 8. [Model Performance](#Model-Performance)
-9. [model choice](#model-choice)
+9. [model choice](#Model-Comparison)
 10. [Recommendations](#Recommendations)
 11. [Thank You](#THANK-YOU)
 
@@ -79,7 +79,7 @@ Data Understanding The comes from Driven Data - Tanzanian Water Wells
 The data did not contain duplicates but it had missing values the majority of which were categorical columns measures taken were to impute the missing values to retain other rows containing information that was useful in the exploratory data analysis and modeling section.
 
 
-## Exploratory Data Analysis 🔍🧐
+## Exploratory Data Analysis🔍🧐
 
 1. visualized the distribution of water wells and their status
 
@@ -113,6 +113,64 @@ print(stats.chi2_contingency(crosstab))
 Funders like the Government of Tanzania and HESAWA may require further analysis to understand why their non-functional water points are so high despite large investments.
 Private Individuals might benefit from technical or financial support to improve their success rate in maintaining functional water points.
 Focus on funders with a higher proportion of functional water points (e.g., DANIDA ) could offer insights into best practices.
+
+
+## Modeling
+
+For this section, since we were working with a classification problem the following models were used:
+1. *`Logistic models`*
+2. *`Decision Trees`*
+3. *`Convolution Neural Network`*
+
+**Why This Combination of Models?**
+Using a combination of these models ensures a robust analysis:
+
+- *Baseline to Advanced Progression:* Logistic regression serves as a baseline, decision trees handle non-linear relationships, and CNNs explore complex spatial dependencies.
+- *Interpretability vs. Complexity Trade-off:* Logistic regression and decision trees offer interpretability, which is crucial for stakeholder understanding, while CNNs provide advanced, potentially higher-performing solutions.
+- *Flexibility:* This variety ensures the best fit for the dataset, as the characteristics of the data will determine which model performs best.
+
+This approach balances simplicity, interpretability, and advanced techniques, providing a comprehensive analysis of water pump functionality.
+
+
+## **Model Comparison**
+Since our response variable contains imbalanced classes
+![image](https://github.com/user-attachments/assets/f0267309-2711-4cc4-9958-532616d8f96d)
+Balancing the classes was tackled by using *SMOTE-NC (Nominal Continuous)* which takes into account when most of the variables in the data are categorical variables.
+Also, we will use the F1_score as the metric to measure our model's performance on predicting the classes and other evaluation techniques.
+Fine-tuning was necessary to ensure the models were optimized to their best performance while addressing issues like overfitting in the model.
+
+![image](https://github.com/user-attachments/assets/d93bb94e-ec2d-49e6-8213-2b86cdd1c4b9)
+
+The bar chart compares the **F1 scores** of four models used in the classification of water pump functionality: Logistic Regression, Decision Trees (Gini and Entropy), and a Convolutional Neural Network (CNN). 
+
+- The **Decision Tree (Gini)** model achieved the highest F1 score of **73.59%**, slightly outperforming the **Decision Tree (Entropy)** model, which had an F1 score of **72.90%**.
+- The **CNN model** followed closely with an F1 score of **72.26%**, demonstrating strong performance despite its complexity.
+- The **Logistic Regression** model had the lowest F1 score at **70.10%**, indicating it may not handle non-linear relationships as effectively as the other models.
+
+Overall, the Decision Tree models performed the best, with Gini slightly outperforming Entropy, while the CNN showed competitive results, making it a viable option for more complex patterns. Logistic Regression serves as a good baseline but falls short compared to the others.
+
+![image](https://github.com/user-attachments/assets/2c51ee62-7edf-4041-949a-cdda335aa07e)
+
+**Overall Comparison:**
+Models with higher AUC values are better at distinguishing between classes.
+- Tree_Gini and Tree_Entropy, with the highest AUC values (0.78), are the best-performing models.
+- Logistic regression is the weakest among the models but still acceptable for classification tasks.
+- The CNN model is competitive but slightly underperforms compared to the decision tree models.
+
+Based on the F1_score comparison and the ROC_AUC curve I chose the best model as the decision tree using the gini impurities.🥳🥳
+
+To evaluate how the best model performed we will use a confusion matrix
+![image](https://github.com/user-attachments/assets/caf4392b-6913-4f5b-9786-356a6b044a35)
+
+**Interpretation:**
+Strengths: The model performs well in predicting functional items (high true negative rate, 86.6%).
+Weaknesses: It struggles more with predicting non-functional items, as indicated by a lower recall (69.7%) and a significant false negative count (30.3%).
+
+
+
+
+
+
 
 
 
